@@ -1,0 +1,12 @@
+Step 1 : Execute the Makefile by typing : make
+Step 2 : After typing make check if vedant_kernel_module.ko is made
+Step 3 : Compile the thread program by writing gcc thread_prg.c -o thread_prg
+Step 4 : Now open two terminals where you have stored the programs 
+Step 5 : In first terminal JUST TYPE (DON'T HIT ENTER) : ./thread_prg
+Step 6 : In second terminal JUST TYPE (DON'T HIT ENTER) : sudo insmod vedant_kernel_module.ko
+Step 7 : Now go to first terminal and hit enter (Execute the ./thread_prg program) and as soon as you hit enter go to second terminal and hit enter there as well (Execute the sudo insmod vedant_kernel_module.ko) 
+Step 8 : You must be very fast and should execute both commands BEFORE THE THREAD PROGRAM FINISHES EXECUTING
+Step 9 : Once the thread program execution is done (don't close this terminal), go to second terminal and type : lsmod
+Step 10 : You should be able to see the first kernel module to be vedant_kernel_module
+Step 11 : Once you see that your module has been loaded to kernel type this : sudo dmesg
+Step 12 : You should get the output and then take ss of this message and the first terminal's (thread program) output
